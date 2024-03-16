@@ -1,5 +1,7 @@
 package com.Project.post.Controller;
 
+import com.Project.post.Config.JwtTokenProvider;
+import com.Project.post.Entity.JWTAuthResponse;
 import com.Project.post.Entity.Role;
 import com.Project.post.Entity.User;
 import com.Project.post.Payload.LoginDto;
@@ -35,18 +37,22 @@ public class AuthController {
     PasswordEncoder passwordEncoder;
     @Autowired
     RoleRepository roleRepository;
+    @Autowired
+    private JwtTokenProvider tokenProvider;
 
     @PostMapping("/signin")
-    //http://localhost:8080/api/auth/signin
-    public ResponseEntity<String> authenticateUser(@RequestBody LoginDto loginDto) {
-        Authentication authentication = authenticationManager.authenticate(
-                new UsernamePasswordAuthenticationToken(loginDto.getUsernameOrEmail(), loginDto.getPassword())
-        );
+    public ResponseEntity<JWTAuthResponse> authenticateUser(@RequestBody LoginDto loginDto){
+        Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(
+                loginDto.getUsernameOrEmail(), loginDto.getPassword()));
+
         SecurityContextHolder.getContext().setAuthentication(authentication);
-        return new ResponseEntity<>("User signed-in successfully!.", HttpStatus.OK);
 
+        // get token form tokenProvider
+        String token = tokenProvider.generateToken(authentication);
 
+        return ResponseEntity.ok(new JWTAuthResponse(token));
     }
+
 
 
     @PostMapping("/signup")
