@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Live Cricket Admin</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/stompjs@2.3.3/lib/stomp.min.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #0f172a;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: #1e293b;
+            padding: 40px;
+            border-radius: 16px;
+            width: 400px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: none;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background: #22c55e;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #16a34a;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>🏏 Live Score Admin</h2>
+
+    <input id="team" placeholder="Team Name (India)" />
+    <input id="runs" type="number" placeholder="Runs (120)" />
+    <input id="wickets" type="number" placeholder="Wickets (3)" />
+    <input id="overs" type="number" step="0.1" placeholder="Overs (14.2)" />
+
+    <button onclick="sendScore()">Update Score</button>
+</div>
+
+<script>
+    var socket = new SockJS('/ws');
+    var stompClient = Stomp.over(socket);
+
+    stompClient.connect({}, function () {
+        console.log("Admin Connected");
+    });
+
+    function sendScore() {
+
+        var score = {
+            team: document.getElementById("team").value,
+            runs: parseInt(document.getElementById("runs").value),
+            wickets: parseInt(document.getElementById("wickets").value),
+            overs: parseFloat(document.getElementById("overs").value)
+        };
+
+        stompClient.send("/app/update", {}, JSON.stringify(score));
+    }
+</script>
+
+</body>
+</html>

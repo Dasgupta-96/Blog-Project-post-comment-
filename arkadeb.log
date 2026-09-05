@@ -1,0 +1,506 @@
+2026-07-15T18:55:09.888+05:30  INFO 8220 --- [Project-post-comment] [restartedMain] com.Project.post_comment.Application     : Starting Application using Java 17.0.11 with PID 8220 (D:\Project(post-comment)\Project-post-comment\target\classes started by ArkadebDG in D:\Project(post-comment)\Project-post-comment)
+2026-07-15T18:55:09.923+05:30  INFO 8220 --- [Project-post-comment] [restartedMain] com.Project.post_comment.Application     : No active profile set, falling back to 1 default profile: "default"
+2026-07-15T18:55:10.078+05:30  INFO 8220 --- [Project-post-comment] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-15T18:55:10.080+05:30  INFO 8220 --- [Project-post-comment] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-15T18:55:12.040+05:30  INFO 8220 --- [Project-post-comment] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-15T18:55:12.251+05:30  INFO 8220 --- [Project-post-comment] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 198 ms. Found 5 JPA repository interfaces.
+2026-07-15T18:55:13.382+05:30  INFO 8220 --- [Project-post-comment] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-07-15T18:55:13.396+05:30  INFO 8220 --- [Project-post-comment] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-15T18:55:13.396+05:30  INFO 8220 --- [Project-post-comment] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-07-15T18:55:13.467+05:30  INFO 8220 --- [Project-post-comment] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-15T18:55:13.467+05:30  INFO 8220 --- [Project-post-comment] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3386 ms
+2026-07-15T18:55:13.805+05:30  INFO 8220 --- [Project-post-comment] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-15T18:55:13.883+05:30  INFO 8220 --- [Project-post-comment] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2026-07-15T18:55:13.922+05:30  INFO 8220 --- [Project-post-comment] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-07-15T18:55:14.237+05:30  INFO 8220 --- [Project-post-comment] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-15T18:55:14.274+05:30  INFO 8220 --- [Project-post-comment] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-15T18:55:14.697+05:30  INFO 8220 --- [Project-post-comment] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4feebfcf
+2026-07-15T18:55:14.700+05:30  INFO 8220 --- [Project-post-comment] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-15T18:55:14.815+05:30  INFO 8220 --- [Project-post-comment] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.37
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-15T18:55:16.072+05:30  INFO 8220 --- [Project-post-comment] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-15T18:55:16.171+05:30  INFO 8220 --- [Project-post-comment] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-15T18:55:16.666+05:30 DEBUG 8220 --- [Project-post-comment] [restartedMain] c.P.post_comment.Service.JwtAuthFilter   : Filter 'jwtAuthFilter' configured for use
+2026-07-15T18:55:16.809+05:30  INFO 8220 --- [Project-post-comment] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2026-07-15T18:55:17.192+05:30  WARN 8220 --- [Project-post-comment] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-15T18:55:17.867+05:30  INFO 8220 --- [Project-post-comment] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2026-07-15T18:55:18.399+05:30  WARN 8220 --- [Project-post-comment] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-07-15T18:55:18.842+05:30  INFO 8220 --- [Project-post-comment] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-07-15T18:55:18.914+05:30  INFO 8220 --- [Project-post-comment] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2026-07-15T18:55:18.915+05:30  INFO 8220 --- [Project-post-comment] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@64f2f48f]]
+2026-07-15T18:55:18.915+05:30  INFO 8220 --- [Project-post-comment] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2026-07-15T18:55:19.013+05:30  INFO 8220 --- [Project-post-comment] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2026-07-15T18:55:19.028+05:30  INFO 8220 --- [Project-post-comment] [restartedMain] com.Project.post_comment.Application     : Started Application in 10.068 seconds (process running for 11.301)
+2026-07-15T18:56:11.178+05:30  INFO 8220 --- [Project-post-comment] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-15T18:56:11.262+05:30  INFO 8220 --- [Project-post-comment] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-07-15T18:56:11.263+05:30  INFO 8220 --- [Project-post-comment] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2026-07-15T18:56:11.264+05:30  INFO 8220 --- [Project-post-comment] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@64f2f48f]]
+2026-07-15T18:56:11.264+05:30  INFO 8220 --- [Project-post-comment] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2026-07-15T18:56:11.267+05:30  INFO 8220 --- [Project-post-comment] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-15T18:56:11.270+05:30  INFO 8220 --- [Project-post-comment] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-07-15T18:56:11.282+05:30  INFO 8220 --- [Project-post-comment] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-07-15T19:16:57.567+05:30  INFO 15984 --- [Project-post-comment] [restartedMain] com.Project.post_comment.Application     : Starting Application using Java 17.0.11 with PID 15984 (D:\Project(post-comment)\Project-post-comment\target\classes started by ArkadebDG in D:\Project(post-comment)\Project-post-comment)
+2026-07-15T19:16:57.570+05:30  INFO 15984 --- [Project-post-comment] [restartedMain] com.Project.post_comment.Application     : No active profile set, falling back to 1 default profile: "default"
+2026-07-15T19:16:57.629+05:30  INFO 15984 --- [Project-post-comment] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-15T19:16:57.629+05:30  INFO 15984 --- [Project-post-comment] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-15T19:16:58.919+05:30  INFO 15984 --- [Project-post-comment] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-15T19:16:59.055+05:30  INFO 15984 --- [Project-post-comment] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 129 ms. Found 5 JPA repository interfaces.
+2026-07-15T19:16:59.836+05:30  INFO 15984 --- [Project-post-comment] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-07-15T19:16:59.845+05:30  INFO 15984 --- [Project-post-comment] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-15T19:16:59.846+05:30  INFO 15984 --- [Project-post-comment] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-07-15T19:16:59.899+05:30  INFO 15984 --- [Project-post-comment] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-15T19:16:59.899+05:30  INFO 15984 --- [Project-post-comment] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2269 ms
+2026-07-15T19:17:00.156+05:30  INFO 15984 --- [Project-post-comment] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-15T19:17:00.205+05:30  INFO 15984 --- [Project-post-comment] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2026-07-15T19:17:00.230+05:30  INFO 15984 --- [Project-post-comment] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-07-15T19:17:00.476+05:30  INFO 15984 --- [Project-post-comment] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-15T19:17:00.503+05:30  INFO 15984 --- [Project-post-comment] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-15T19:17:00.781+05:30  INFO 15984 --- [Project-post-comment] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5193e532
+2026-07-15T19:17:00.784+05:30  INFO 15984 --- [Project-post-comment] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-15T19:17:00.869+05:30  INFO 15984 --- [Project-post-comment] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.37
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-15T19:17:01.873+05:30  INFO 15984 --- [Project-post-comment] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-15T19:17:01.947+05:30  INFO 15984 --- [Project-post-comment] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-15T19:17:02.267+05:30 DEBUG 15984 --- [Project-post-comment] [restartedMain] c.P.post_comment.Service.JwtAuthFilter   : Filter 'jwtAuthFilter' configured for use
+2026-07-15T19:17:02.379+05:30  INFO 15984 --- [Project-post-comment] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2026-07-15T19:17:02.623+05:30  WARN 15984 --- [Project-post-comment] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-15T19:17:03.123+05:30  INFO 15984 --- [Project-post-comment] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2026-07-15T19:17:03.402+05:30  WARN 15984 --- [Project-post-comment] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-07-15T19:17:03.673+05:30  INFO 15984 --- [Project-post-comment] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-07-15T19:17:03.722+05:30  INFO 15984 --- [Project-post-comment] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2026-07-15T19:17:03.723+05:30  INFO 15984 --- [Project-post-comment] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@2a42899f]]
+2026-07-15T19:17:03.725+05:30  INFO 15984 --- [Project-post-comment] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2026-07-15T19:17:03.795+05:30  INFO 15984 --- [Project-post-comment] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2026-07-15T19:17:03.807+05:30  INFO 15984 --- [Project-post-comment] [restartedMain] com.Project.post_comment.Application     : Started Application in 6.766 seconds (process running for 7.694)
+2026-07-15T19:18:03.701+05:30  INFO 15984 --- [Project-post-comment] [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2026-07-15T19:18:11.593+05:30  INFO 15984 --- [Project-post-comment] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-15T19:18:11.662+05:30  INFO 15984 --- [Project-post-comment] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-07-15T19:18:11.664+05:30  INFO 15984 --- [Project-post-comment] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2026-07-15T19:18:11.664+05:30  INFO 15984 --- [Project-post-comment] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@2a42899f]]
+2026-07-15T19:18:11.664+05:30  INFO 15984 --- [Project-post-comment] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2026-07-15T19:18:11.669+05:30  INFO 15984 --- [Project-post-comment] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-15T19:18:11.672+05:30  INFO 15984 --- [Project-post-comment] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-07-15T19:18:11.681+05:30  INFO 15984 --- [Project-post-comment] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-07-15T19:18:16.743+05:30  INFO 22832 --- [Project-post-comment] [restartedMain] com.Project.post_comment.Application     : Starting Application using Java 17.0.11 with PID 22832 (D:\Project(post-comment)\Project-post-comment\target\classes started by ArkadebDG in D:\Project(post-comment)\Project-post-comment)
+2026-07-15T19:18:16.745+05:30  INFO 22832 --- [Project-post-comment] [restartedMain] com.Project.post_comment.Application     : No active profile set, falling back to 1 default profile: "default"
+2026-07-15T19:18:16.786+05:30  INFO 22832 --- [Project-post-comment] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-15T19:18:16.786+05:30  INFO 22832 --- [Project-post-comment] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-15T19:18:17.929+05:30  INFO 22832 --- [Project-post-comment] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-15T19:18:18.051+05:30  INFO 22832 --- [Project-post-comment] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 116 ms. Found 5 JPA repository interfaces.
+2026-07-15T19:18:18.699+05:30  INFO 22832 --- [Project-post-comment] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-07-15T19:18:18.707+05:30  INFO 22832 --- [Project-post-comment] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-15T19:18:18.707+05:30  INFO 22832 --- [Project-post-comment] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-07-15T19:18:18.745+05:30  INFO 22832 --- [Project-post-comment] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-15T19:18:18.746+05:30  INFO 22832 --- [Project-post-comment] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1959 ms
+2026-07-15T19:18:18.969+05:30  INFO 22832 --- [Project-post-comment] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-15T19:18:19.021+05:30  INFO 22832 --- [Project-post-comment] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2026-07-15T19:18:19.049+05:30  INFO 22832 --- [Project-post-comment] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-07-15T19:18:19.226+05:30  INFO 22832 --- [Project-post-comment] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-15T19:18:19.249+05:30  INFO 22832 --- [Project-post-comment] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-15T19:18:19.459+05:30  INFO 22832 --- [Project-post-comment] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@33edbf85
+2026-07-15T19:18:19.462+05:30  INFO 22832 --- [Project-post-comment] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-15T19:18:19.516+05:30  INFO 22832 --- [Project-post-comment] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.37
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-15T19:18:20.287+05:30  INFO 22832 --- [Project-post-comment] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-15T19:18:20.350+05:30  INFO 22832 --- [Project-post-comment] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-15T19:18:20.598+05:30 DEBUG 22832 --- [Project-post-comment] [restartedMain] c.P.post_comment.Service.JwtAuthFilter   : Filter 'jwtAuthFilter' configured for use
+2026-07-15T19:18:20.706+05:30  INFO 22832 --- [Project-post-comment] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2026-07-15T19:18:20.942+05:30  WARN 22832 --- [Project-post-comment] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-15T19:18:21.356+05:30  INFO 22832 --- [Project-post-comment] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2026-07-15T19:18:21.601+05:30  WARN 22832 --- [Project-post-comment] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-07-15T19:18:21.841+05:30  INFO 22832 --- [Project-post-comment] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-07-15T19:18:21.886+05:30  INFO 22832 --- [Project-post-comment] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2026-07-15T19:18:21.887+05:30  INFO 22832 --- [Project-post-comment] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@6b786f30]]
+2026-07-15T19:18:21.888+05:30  INFO 22832 --- [Project-post-comment] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2026-07-15T19:18:21.944+05:30  INFO 22832 --- [Project-post-comment] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2026-07-15T19:18:21.954+05:30  INFO 22832 --- [Project-post-comment] [restartedMain] com.Project.post_comment.Application     : Started Application in 5.609 seconds (process running for 6.364)
+2026-07-15T19:18:44.166+05:30  INFO 22832 --- [Project-post-comment] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-15T19:18:44.245+05:30  INFO 22832 --- [Project-post-comment] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-07-15T19:18:44.246+05:30  INFO 22832 --- [Project-post-comment] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2026-07-15T19:18:44.247+05:30  INFO 22832 --- [Project-post-comment] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@6b786f30]]
+2026-07-15T19:18:44.247+05:30  INFO 22832 --- [Project-post-comment] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2026-07-15T19:18:44.250+05:30  INFO 22832 --- [Project-post-comment] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-15T19:18:44.253+05:30  INFO 22832 --- [Project-post-comment] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-07-15T19:18:44.262+05:30  INFO 22832 --- [Project-post-comment] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-07-15T19:18:51.912+05:30  INFO 39728 --- [Project-post-comment] [restartedMain] com.Project.post_comment.Application     : Starting Application using Java 17.0.11 with PID 39728 (D:\Project(post-comment)\Project-post-comment\target\classes started by ArkadebDG in D:\Project(post-comment)\Project-post-comment)
+2026-07-15T19:18:51.914+05:30  INFO 39728 --- [Project-post-comment] [restartedMain] com.Project.post_comment.Application     : No active profile set, falling back to 1 default profile: "default"
+2026-07-15T19:18:51.957+05:30  INFO 39728 --- [Project-post-comment] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-15T19:18:51.957+05:30  INFO 39728 --- [Project-post-comment] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-15T19:18:53.892+05:30  INFO 39728 --- [Project-post-comment] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-15T19:18:54.320+05:30  INFO 39728 --- [Project-post-comment] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 407 ms. Found 5 JPA repository interfaces.
+2026-07-15T19:18:56.598+05:30  INFO 39728 --- [Project-post-comment] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-07-15T19:18:56.626+05:30  INFO 39728 --- [Project-post-comment] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-15T19:18:56.626+05:30  INFO 39728 --- [Project-post-comment] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-07-15T19:18:56.781+05:30  INFO 39728 --- [Project-post-comment] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-15T19:18:56.782+05:30  INFO 39728 --- [Project-post-comment] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4825 ms
+2026-07-15T19:18:57.584+05:30  INFO 39728 --- [Project-post-comment] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-15T19:18:57.738+05:30  INFO 39728 --- [Project-post-comment] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2026-07-15T19:18:57.821+05:30  INFO 39728 --- [Project-post-comment] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-07-15T19:18:58.431+05:30  INFO 39728 --- [Project-post-comment] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-15T19:18:58.506+05:30  INFO 39728 --- [Project-post-comment] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-15T19:18:59.144+05:30  INFO 39728 --- [Project-post-comment] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c3f8347
+2026-07-15T19:18:59.147+05:30  INFO 39728 --- [Project-post-comment] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-15T19:18:59.368+05:30  INFO 39728 --- [Project-post-comment] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.37
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-15T19:19:01.075+05:30  INFO 39728 --- [Project-post-comment] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-15T19:19:01.140+05:30  INFO 39728 --- [Project-post-comment] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-15T19:19:01.458+05:30 DEBUG 39728 --- [Project-post-comment] [restartedMain] c.P.post_comment.Service.JwtAuthFilter   : Filter 'jwtAuthFilter' configured for use
+2026-07-15T19:19:01.578+05:30  INFO 39728 --- [Project-post-comment] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2026-07-15T19:19:01.804+05:30  WARN 39728 --- [Project-post-comment] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-15T19:19:02.233+05:30  INFO 39728 --- [Project-post-comment] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2026-07-15T19:19:02.454+05:30  WARN 39728 --- [Project-post-comment] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-07-15T19:19:02.692+05:30  INFO 39728 --- [Project-post-comment] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-07-15T19:19:02.744+05:30  INFO 39728 --- [Project-post-comment] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2026-07-15T19:19:02.745+05:30  INFO 39728 --- [Project-post-comment] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@7a694872]]
+2026-07-15T19:19:02.745+05:30  INFO 39728 --- [Project-post-comment] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2026-07-15T19:19:02.807+05:30  INFO 39728 --- [Project-post-comment] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2026-07-15T19:19:02.817+05:30  INFO 39728 --- [Project-post-comment] [restartedMain] com.Project.post_comment.Application     : Started Application in 11.305 seconds (process running for 12.063)
+2026-07-15T19:20:02.733+05:30  INFO 39728 --- [Project-post-comment] [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2026-07-15T19:21:03.190+05:30  INFO 39728 --- [Project-post-comment] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-15T19:21:03.259+05:30  INFO 39728 --- [Project-post-comment] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-07-15T19:21:03.262+05:30  INFO 39728 --- [Project-post-comment] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2026-07-15T19:21:03.263+05:30  INFO 39728 --- [Project-post-comment] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@7a694872]]
+2026-07-15T19:21:03.263+05:30  INFO 39728 --- [Project-post-comment] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2026-07-15T19:21:03.267+05:30  INFO 39728 --- [Project-post-comment] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-15T19:21:03.269+05:30  INFO 39728 --- [Project-post-comment] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-07-15T19:21:03.275+05:30  INFO 39728 --- [Project-post-comment] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-07-15T19:21:08.213+05:30  INFO 43028 --- [Project-post-comment] [restartedMain] com.Project.post_comment.Application     : Starting Application using Java 17.0.11 with PID 43028 (D:\Project(post-comment)\Project-post-comment\target\classes started by ArkadebDG in D:\Project(post-comment)\Project-post-comment)
+2026-07-15T19:21:08.216+05:30  INFO 43028 --- [Project-post-comment] [restartedMain] com.Project.post_comment.Application     : No active profile set, falling back to 1 default profile: "default"
+2026-07-15T19:21:08.261+05:30  INFO 43028 --- [Project-post-comment] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-15T19:21:08.261+05:30  INFO 43028 --- [Project-post-comment] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-15T19:21:09.375+05:30  INFO 43028 --- [Project-post-comment] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-15T19:21:09.507+05:30  INFO 43028 --- [Project-post-comment] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 125 ms. Found 5 JPA repository interfaces.
+2026-07-15T19:21:10.134+05:30  INFO 43028 --- [Project-post-comment] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-07-15T19:21:10.140+05:30  INFO 43028 --- [Project-post-comment] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-15T19:21:10.141+05:30  INFO 43028 --- [Project-post-comment] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-07-15T19:21:10.181+05:30  INFO 43028 --- [Project-post-comment] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-15T19:21:10.182+05:30  INFO 43028 --- [Project-post-comment] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1920 ms
+2026-07-15T19:21:10.398+05:30  INFO 43028 --- [Project-post-comment] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-15T19:21:10.434+05:30  INFO 43028 --- [Project-post-comment] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2026-07-15T19:21:10.454+05:30  INFO 43028 --- [Project-post-comment] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-07-15T19:21:10.610+05:30  INFO 43028 --- [Project-post-comment] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-15T19:21:10.631+05:30  INFO 43028 --- [Project-post-comment] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-15T19:21:10.822+05:30  INFO 43028 --- [Project-post-comment] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@61532104
+2026-07-15T19:21:10.824+05:30  INFO 43028 --- [Project-post-comment] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-15T19:21:10.882+05:30  INFO 43028 --- [Project-post-comment] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.37
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-15T19:21:11.568+05:30  INFO 43028 --- [Project-post-comment] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-15T19:21:11.620+05:30  INFO 43028 --- [Project-post-comment] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-15T19:21:11.866+05:30 DEBUG 43028 --- [Project-post-comment] [restartedMain] c.P.post_comment.Service.JwtAuthFilter   : Filter 'jwtAuthFilter' configured for use
+2026-07-15T19:21:11.963+05:30  INFO 43028 --- [Project-post-comment] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2026-07-15T19:21:12.169+05:30  WARN 43028 --- [Project-post-comment] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-15T19:21:12.583+05:30  INFO 43028 --- [Project-post-comment] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2026-07-15T19:21:12.804+05:30  WARN 43028 --- [Project-post-comment] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-07-15T19:21:13.046+05:30  INFO 43028 --- [Project-post-comment] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-07-15T19:21:13.084+05:30  INFO 43028 --- [Project-post-comment] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2026-07-15T19:21:13.084+05:30  INFO 43028 --- [Project-post-comment] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@6d2fc3a7]]
+2026-07-15T19:21:13.084+05:30  INFO 43028 --- [Project-post-comment] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2026-07-15T19:21:13.144+05:30  INFO 43028 --- [Project-post-comment] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2026-07-15T19:21:13.153+05:30  INFO 43028 --- [Project-post-comment] [restartedMain] com.Project.post_comment.Application     : Started Application in 5.307 seconds (process running for 6.009)
+2026-07-15T19:22:13.068+05:30  INFO 43028 --- [Project-post-comment] [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2026-07-15T19:30:29.910+05:30  INFO 43028 --- [Project-post-comment] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-15T19:30:29.983+05:30  INFO 43028 --- [Project-post-comment] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-07-15T19:30:29.986+05:30  INFO 43028 --- [Project-post-comment] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2026-07-15T19:30:29.986+05:30  INFO 43028 --- [Project-post-comment] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@6d2fc3a7]]
+2026-07-15T19:30:29.986+05:30  INFO 43028 --- [Project-post-comment] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2026-07-15T19:30:29.991+05:30  INFO 43028 --- [Project-post-comment] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-15T19:30:29.995+05:30  INFO 43028 --- [Project-post-comment] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-07-15T19:30:30.002+05:30  INFO 43028 --- [Project-post-comment] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-07-15T19:30:36.133+05:30  INFO 38488 --- [Project-post-comment] [restartedMain] com.Project.post_comment.Application     : Starting Application using Java 17.0.11 with PID 38488 (D:\Project(post-comment)\Project-post-comment\target\classes started by ArkadebDG in D:\Project(post-comment)\Project-post-comment)
+2026-07-15T19:30:36.136+05:30  INFO 38488 --- [Project-post-comment] [restartedMain] com.Project.post_comment.Application     : No active profile set, falling back to 1 default profile: "default"
+2026-07-15T19:30:36.187+05:30  INFO 38488 --- [Project-post-comment] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-15T19:30:36.188+05:30  INFO 38488 --- [Project-post-comment] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-15T19:30:37.534+05:30  INFO 38488 --- [Project-post-comment] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-15T19:30:37.705+05:30  INFO 38488 --- [Project-post-comment] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 163 ms. Found 5 JPA repository interfaces.
+2026-07-15T19:30:38.560+05:30  INFO 38488 --- [Project-post-comment] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-07-15T19:30:38.571+05:30  INFO 38488 --- [Project-post-comment] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-15T19:30:38.572+05:30  INFO 38488 --- [Project-post-comment] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-07-15T19:30:38.636+05:30  INFO 38488 --- [Project-post-comment] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-15T19:30:38.636+05:30  INFO 38488 --- [Project-post-comment] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2447 ms
+2026-07-15T19:30:38.918+05:30  INFO 38488 --- [Project-post-comment] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-15T19:30:38.968+05:30  INFO 38488 --- [Project-post-comment] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2026-07-15T19:30:38.999+05:30  INFO 38488 --- [Project-post-comment] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-07-15T19:30:39.227+05:30  INFO 38488 --- [Project-post-comment] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-15T19:30:39.251+05:30  INFO 38488 --- [Project-post-comment] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-15T19:30:39.526+05:30  INFO 38488 --- [Project-post-comment] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7c8e4a61
+2026-07-15T19:30:39.528+05:30  INFO 38488 --- [Project-post-comment] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-15T19:30:39.593+05:30  INFO 38488 --- [Project-post-comment] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.37
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-15T19:30:40.678+05:30  INFO 38488 --- [Project-post-comment] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-15T19:30:40.754+05:30  INFO 38488 --- [Project-post-comment] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-15T19:30:41.134+05:30 DEBUG 38488 --- [Project-post-comment] [restartedMain] c.P.post_comment.Service.JwtAuthFilter   : Filter 'jwtAuthFilter' configured for use
+2026-07-15T19:30:41.265+05:30  INFO 38488 --- [Project-post-comment] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2026-07-15T19:30:41.540+05:30  WARN 38488 --- [Project-post-comment] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-15T19:30:42.171+05:30  INFO 38488 --- [Project-post-comment] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2026-07-15T19:30:42.496+05:30  WARN 38488 --- [Project-post-comment] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-07-15T19:30:42.809+05:30  INFO 38488 --- [Project-post-comment] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-07-15T19:30:42.875+05:30  INFO 38488 --- [Project-post-comment] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2026-07-15T19:30:42.875+05:30  INFO 38488 --- [Project-post-comment] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@5ce600c1]]
+2026-07-15T19:30:42.876+05:30  INFO 38488 --- [Project-post-comment] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2026-07-15T19:30:42.957+05:30  INFO 38488 --- [Project-post-comment] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2026-07-15T19:30:42.969+05:30  INFO 38488 --- [Project-post-comment] [restartedMain] com.Project.post_comment.Application     : Started Application in 7.344 seconds (process running for 8.325)
+2026-07-15T19:31:41.092+05:30  INFO 38488 --- [Project-post-comment] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-07-15T19:31:41.110+05:30 ERROR 38488 --- [Project-post-comment] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.lambda$callRunner$6(SpringApplication.java:795) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:66) ~[spring-core-6.2.2.jar:6.2.2]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:86) ~[spring-core-6.2.2.jar:6.2.2]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:796) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:787) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:772) ~[spring-boot-3.4.2.jar:3.4.2]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[na:na]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:772) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.2.jar:3.4.2]
+	at com.Project.post_comment.Application.main(Application.java:37) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.2.jar:3.4.2]
+Caused by: javax.crypto.BadPaddingException: Padding error in decryption
+	at java.base/com.sun.crypto.provider.RSACipher.doFinal(RSACipher.java:389) ~[na:na]
+	at java.base/com.sun.crypto.provider.RSACipher.engineDoFinal(RSACipher.java:425) ~[na:na]
+	at java.base/javax.crypto.Cipher.doFinal(Cipher.java:2205) ~[na:na]
+	at com.Project.post_comment.util.RSAUtility.performDecryption(RSAUtility.java:60) ~[classes/:na]
+	at com.Project.post_comment.Application.run(Application.java:84) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:788) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:82) ~[spring-core-6.2.2.jar:6.2.2]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.2.2.jar:6.2.2]
+	... 22 common frames omitted
+
+2026-07-15T19:31:41.117+05:30  INFO 38488 --- [Project-post-comment] [restartedMain] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-15T19:31:41.185+05:30  INFO 38488 --- [Project-post-comment] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-07-15T19:31:41.186+05:30  INFO 38488 --- [Project-post-comment] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2026-07-15T19:31:41.187+05:30  INFO 38488 --- [Project-post-comment] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@5ce600c1]]
+2026-07-15T19:31:41.187+05:30  INFO 38488 --- [Project-post-comment] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2026-07-15T19:31:41.195+05:30  INFO 38488 --- [Project-post-comment] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-15T19:31:41.199+05:30  INFO 38488 --- [Project-post-comment] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-07-15T19:31:41.211+05:30  INFO 38488 --- [Project-post-comment] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-07-15T19:33:24.176+05:30  INFO 27892 --- [Project-post-comment] [restartedMain] com.Project.post_comment.Application     : Starting Application using Java 17.0.11 with PID 27892 (D:\Project(post-comment)\Project-post-comment\target\classes started by ArkadebDG in D:\Project(post-comment)\Project-post-comment)
+2026-07-15T19:33:24.179+05:30  INFO 27892 --- [Project-post-comment] [restartedMain] com.Project.post_comment.Application     : No active profile set, falling back to 1 default profile: "default"
+2026-07-15T19:33:24.224+05:30  INFO 27892 --- [Project-post-comment] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-15T19:33:24.224+05:30  INFO 27892 --- [Project-post-comment] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-15T19:33:25.513+05:30  INFO 27892 --- [Project-post-comment] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-15T19:33:25.662+05:30  INFO 27892 --- [Project-post-comment] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 138 ms. Found 5 JPA repository interfaces.
+2026-07-15T19:33:26.327+05:30  INFO 27892 --- [Project-post-comment] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-07-15T19:33:26.381+05:30  INFO 27892 --- [Project-post-comment] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2156 ms
+2026-07-15T19:33:26.608+05:30  INFO 27892 --- [Project-post-comment] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-15T19:33:26.644+05:30  INFO 27892 --- [Project-post-comment] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2026-07-15T19:33:26.666+05:30  INFO 27892 --- [Project-post-comment] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-07-15T19:33:26.845+05:30  INFO 27892 --- [Project-post-comment] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-15T19:33:26.867+05:30  INFO 27892 --- [Project-post-comment] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-15T19:33:27.063+05:30  INFO 27892 --- [Project-post-comment] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6b5713d
+2026-07-15T19:33:27.064+05:30  INFO 27892 --- [Project-post-comment] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-15T19:33:27.120+05:30  INFO 27892 --- [Project-post-comment] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.37
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-15T19:33:27.869+05:30  INFO 27892 --- [Project-post-comment] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-15T19:33:27.929+05:30  INFO 27892 --- [Project-post-comment] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-15T19:33:28.207+05:30 DEBUG 27892 --- [Project-post-comment] [restartedMain] c.P.post_comment.Service.JwtAuthFilter   : Filter 'jwtAuthFilter' configured for use
+2026-07-15T19:33:28.322+05:30  INFO 27892 --- [Project-post-comment] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2026-07-15T19:33:28.563+05:30  WARN 27892 --- [Project-post-comment] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-15T19:33:29.027+05:30  INFO 27892 --- [Project-post-comment] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2026-07-15T19:33:29.273+05:30  WARN 27892 --- [Project-post-comment] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-07-15T19:33:29.561+05:30  INFO 27892 --- [Project-post-comment] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-07-15T19:33:29.606+05:30  INFO 27892 --- [Project-post-comment] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2026-07-15T19:33:29.607+05:30  INFO 27892 --- [Project-post-comment] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@2f85cbee]]
+2026-07-15T19:33:29.607+05:30  INFO 27892 --- [Project-post-comment] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2026-07-15T19:33:29.668+05:30  INFO 27892 --- [Project-post-comment] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2026-07-15T19:33:29.680+05:30  INFO 27892 --- [Project-post-comment] [restartedMain] com.Project.post_comment.Application     : Started Application in 5.906 seconds (process running for 6.627)
+2026-07-15T19:33:29.683+05:30  INFO 27892 --- [Project-post-comment] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-15T19:33:29.770+05:30  INFO 27892 --- [Project-post-comment] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-07-15T19:33:29.773+05:30  INFO 27892 --- [Project-post-comment] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2026-07-15T19:33:29.773+05:30  INFO 27892 --- [Project-post-comment] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@2f85cbee]]
+2026-07-15T19:33:29.773+05:30  INFO 27892 --- [Project-post-comment] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2026-07-15T19:33:29.777+05:30  INFO 27892 --- [Project-post-comment] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-15T19:33:29.780+05:30  INFO 27892 --- [Project-post-comment] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-07-15T19:33:29.791+05:30  INFO 27892 --- [Project-post-comment] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-07-15T19:34:02.478+05:30  INFO 25264 --- [Project-post-comment] [restartedMain] com.Project.post_comment.Application     : Starting Application using Java 17.0.11 with PID 25264 (D:\Project(post-comment)\Project-post-comment\target\classes started by ArkadebDG in D:\Project(post-comment)\Project-post-comment)
+2026-07-15T19:34:02.480+05:30  INFO 25264 --- [Project-post-comment] [restartedMain] com.Project.post_comment.Application     : No active profile set, falling back to 1 default profile: "default"
+2026-07-15T19:34:02.535+05:30  INFO 25264 --- [Project-post-comment] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-15T19:34:02.536+05:30  INFO 25264 --- [Project-post-comment] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-15T19:34:04.023+05:30  INFO 25264 --- [Project-post-comment] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-15T19:34:04.196+05:30  INFO 25264 --- [Project-post-comment] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 164 ms. Found 5 JPA repository interfaces.
+2026-07-15T19:34:05.279+05:30  INFO 25264 --- [Project-post-comment] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-07-15T19:34:05.296+05:30  INFO 25264 --- [Project-post-comment] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-15T19:34:05.296+05:30  INFO 25264 --- [Project-post-comment] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-07-15T19:34:05.363+05:30  INFO 25264 --- [Project-post-comment] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-15T19:34:05.364+05:30  INFO 25264 --- [Project-post-comment] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2826 ms
+2026-07-15T19:34:05.738+05:30  INFO 25264 --- [Project-post-comment] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-15T19:34:05.804+05:30  INFO 25264 --- [Project-post-comment] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2026-07-15T19:34:05.840+05:30  INFO 25264 --- [Project-post-comment] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-07-15T19:34:06.186+05:30  INFO 25264 --- [Project-post-comment] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-15T19:34:06.232+05:30  INFO 25264 --- [Project-post-comment] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-15T19:34:06.650+05:30  INFO 25264 --- [Project-post-comment] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@122d7858
+2026-07-15T19:34:06.655+05:30  INFO 25264 --- [Project-post-comment] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-15T19:34:06.747+05:30  INFO 25264 --- [Project-post-comment] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.37
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-15T19:34:07.974+05:30  INFO 25264 --- [Project-post-comment] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-15T19:34:08.046+05:30  INFO 25264 --- [Project-post-comment] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-15T19:34:08.443+05:30 DEBUG 25264 --- [Project-post-comment] [restartedMain] c.P.post_comment.Service.JwtAuthFilter   : Filter 'jwtAuthFilter' configured for use
+2026-07-15T19:34:08.577+05:30  INFO 25264 --- [Project-post-comment] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2026-07-15T19:34:08.867+05:30  WARN 25264 --- [Project-post-comment] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-15T19:34:09.433+05:30  INFO 25264 --- [Project-post-comment] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2026-07-15T19:34:09.751+05:30  WARN 25264 --- [Project-post-comment] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-07-15T19:34:10.070+05:30  INFO 25264 --- [Project-post-comment] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-07-15T19:34:10.124+05:30  INFO 25264 --- [Project-post-comment] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2026-07-15T19:34:10.125+05:30  INFO 25264 --- [Project-post-comment] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@461f623b]]
+2026-07-15T19:34:10.126+05:30  INFO 25264 --- [Project-post-comment] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2026-07-15T19:34:10.193+05:30  INFO 25264 --- [Project-post-comment] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2026-07-15T19:34:10.205+05:30  INFO 25264 --- [Project-post-comment] [restartedMain] com.Project.post_comment.Application     : Started Application in 8.181 seconds (process running for 9.1)
+2026-07-15T19:34:16.096+05:30  INFO 25264 --- [Project-post-comment] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-07-15T19:34:16.113+05:30 ERROR 25264 --- [Project-post-comment] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.lambda$callRunner$6(SpringApplication.java:795) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:66) ~[spring-core-6.2.2.jar:6.2.2]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:86) ~[spring-core-6.2.2.jar:6.2.2]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:796) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:787) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:772) ~[spring-boot-3.4.2.jar:3.4.2]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183) ~[na:na]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:772) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.2.jar:3.4.2]
+	at com.Project.post_comment.Application.main(Application.java:37) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.2.jar:3.4.2]
+Caused by: javax.crypto.BadPaddingException: Padding error in decryption
+	at java.base/com.sun.crypto.provider.RSACipher.doFinal(RSACipher.java:389) ~[na:na]
+	at java.base/com.sun.crypto.provider.RSACipher.engineDoFinal(RSACipher.java:425) ~[na:na]
+	at java.base/javax.crypto.Cipher.doFinal(Cipher.java:2205) ~[na:na]
+	at com.Project.post_comment.util.RSAUtility.performDecryption(RSAUtility.java:60) ~[classes/:na]
+	at com.Project.post_comment.Application.run(Application.java:84) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:788) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:82) ~[spring-core-6.2.2.jar:6.2.2]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.2.2.jar:6.2.2]
+	... 22 common frames omitted
+
+2026-07-15T19:34:16.121+05:30  INFO 25264 --- [Project-post-comment] [restartedMain] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-15T19:34:16.174+05:30  INFO 25264 --- [Project-post-comment] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-07-15T19:34:16.177+05:30  INFO 25264 --- [Project-post-comment] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2026-07-15T19:34:16.178+05:30  INFO 25264 --- [Project-post-comment] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@461f623b]]
+2026-07-15T19:34:16.178+05:30  INFO 25264 --- [Project-post-comment] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2026-07-15T19:34:16.182+05:30  INFO 25264 --- [Project-post-comment] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-15T19:34:16.186+05:30  INFO 25264 --- [Project-post-comment] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-07-15T19:34:16.194+05:30  INFO 25264 --- [Project-post-comment] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-07-15T19:38:11.193+05:30  INFO 52764 --- [Project-post-comment] [restartedMain] com.Project.post_comment.Application     : Starting Application using Java 17.0.11 with PID 52764 (D:\Project(post-comment)\Project-post-comment\target\classes started by ArkadebDG in D:\Project(post-comment)\Project-post-comment)
+2026-07-15T19:38:11.195+05:30  INFO 52764 --- [Project-post-comment] [restartedMain] com.Project.post_comment.Application     : No active profile set, falling back to 1 default profile: "default"
+2026-07-15T19:38:11.239+05:30  INFO 52764 --- [Project-post-comment] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-15T19:38:11.239+05:30  INFO 52764 --- [Project-post-comment] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-15T19:38:12.376+05:30  INFO 52764 --- [Project-post-comment] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-15T19:38:12.507+05:30  INFO 52764 --- [Project-post-comment] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 125 ms. Found 5 JPA repository interfaces.
+2026-07-15T19:38:13.171+05:30  INFO 52764 --- [Project-post-comment] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-07-15T19:38:13.180+05:30  INFO 52764 --- [Project-post-comment] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-15T19:38:13.181+05:30  INFO 52764 --- [Project-post-comment] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-07-15T19:38:13.225+05:30  INFO 52764 --- [Project-post-comment] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-15T19:38:13.225+05:30  INFO 52764 --- [Project-post-comment] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1986 ms
+2026-07-15T19:38:13.446+05:30  INFO 52764 --- [Project-post-comment] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-15T19:38:13.483+05:30  INFO 52764 --- [Project-post-comment] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2026-07-15T19:38:13.502+05:30  INFO 52764 --- [Project-post-comment] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-07-15T19:38:13.675+05:30  INFO 52764 --- [Project-post-comment] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-15T19:38:13.697+05:30  INFO 52764 --- [Project-post-comment] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-15T19:38:13.934+05:30  INFO 52764 --- [Project-post-comment] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1fc00f06
+2026-07-15T19:38:13.937+05:30  INFO 52764 --- [Project-post-comment] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-15T19:38:13.991+05:30  INFO 52764 --- [Project-post-comment] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.37
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-15T19:38:14.686+05:30  INFO 52764 --- [Project-post-comment] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-15T19:38:14.739+05:30  INFO 52764 --- [Project-post-comment] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-15T19:38:14.976+05:30 DEBUG 52764 --- [Project-post-comment] [restartedMain] c.P.post_comment.Service.JwtAuthFilter   : Filter 'jwtAuthFilter' configured for use
+2026-07-15T19:38:15.081+05:30  INFO 52764 --- [Project-post-comment] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userService
+2026-07-15T19:38:15.290+05:30  WARN 52764 --- [Project-post-comment] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-15T19:38:15.717+05:30  INFO 52764 --- [Project-post-comment] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/actuator'
+2026-07-15T19:38:15.933+05:30  WARN 52764 --- [Project-post-comment] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-07-15T19:38:16.159+05:30  INFO 52764 --- [Project-post-comment] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-07-15T19:38:16.197+05:30  INFO 52764 --- [Project-post-comment] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2026-07-15T19:38:16.197+05:30  INFO 52764 --- [Project-post-comment] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@e55ea3a]]
+2026-07-15T19:38:16.198+05:30  INFO 52764 --- [Project-post-comment] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2026-07-15T19:38:16.259+05:30  INFO 52764 --- [Project-post-comment] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2026-07-15T19:38:16.268+05:30  INFO 52764 --- [Project-post-comment] [restartedMain] com.Project.post_comment.Application     : Started Application in 5.465 seconds (process running for 6.15)
+2026-07-15T19:39:16.190+05:30  INFO 52764 --- [Project-post-comment] [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2026-07-15T20:01:46.119+05:30  INFO 52764 --- [Project-post-comment] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-15T20:01:46.185+05:30  INFO 52764 --- [Project-post-comment] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-07-15T20:01:46.187+05:30  INFO 52764 --- [Project-post-comment] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2026-07-15T20:01:46.187+05:30  INFO 52764 --- [Project-post-comment] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@e55ea3a]]
+2026-07-15T20:01:46.187+05:30  INFO 52764 --- [Project-post-comment] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2026-07-15T20:01:46.192+05:30  INFO 52764 --- [Project-post-comment] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-15T20:01:46.194+05:30  INFO 52764 --- [Project-post-comment] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-07-15T20:01:46.203+05:30  INFO 52764 --- [Project-post-comment] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
