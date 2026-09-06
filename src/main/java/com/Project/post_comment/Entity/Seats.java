@@ -1,10 +1,7 @@
 package com.Project.post_comment.Entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Version;
+import jakarta.persistence.*;
+
 import lombok.Data;
 
 @Entity

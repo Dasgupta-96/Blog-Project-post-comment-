@@ -41,7 +41,7 @@ public class SessionServiceImpl implements SessionService{
   public void validateRefreshToken(String token) {
     // next time when client attempts to refresh the access token the refreshToken will nt b present in db and show exception
     Optional<Session> existsRefresh = sessionRepository.findByRefreshToken(token);
-    if (existsRefresh.isEmpty()) {
+    if (existsRefresh == null) {
       throw new ResourceNotFoundException("Refresh Token not found!! you have logged in from some other device");
     }
     Session session = existsRefresh.get();
