@@ -51,7 +51,6 @@ public class CompletableFutureLearn {
     ExecutorService executor =
       Executors.newFixedThreadPool(2);
 
-
     CompletableFuture<String> completableFuture =
       CompletableFuture.supplyAsync(
         () -> getName(),

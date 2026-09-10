@@ -18,7 +18,7 @@ public class Count {
     System.out.println(Thread.currentThread().getName() + " Acquired a lock");
     try {
 
-      Thread.sleep(5000);
+//      Thread.sleep(5000);
       count++;
     }
     finally { //if we don't use finally if exception occurs unlock() never called other thread wait forever
@@ -28,8 +28,9 @@ public class Count {
       );
       reentrantLock.unlock();
     }
-
-
+  }
+  public int getCount() {
+    return count;
   }
 
   public static void main(String[] args) throws InterruptedException {
@@ -65,5 +66,7 @@ public class Count {
 
     t1.join();
     t2.join();
+
+    System.out.println(count.getCount());
   }
 }

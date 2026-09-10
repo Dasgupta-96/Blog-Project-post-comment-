@@ -11,8 +11,8 @@ public class RepeatatingNumbers {
 
     String name = "arkadebk";
     Map<Character, List<Integer>> map = new HashMap<>();
-   
-    for (int i =0; i<name.length(); i++) {
+
+    for (int i = 0; i < name.length(); i++) {
 
       char ch = name.charAt(i);
 
@@ -27,6 +27,30 @@ public class RepeatatingNumbers {
       }
     }
 
+    String s = "leetcode";
+   //TODO: using streams
+    Character c1 = s.chars().mapToObj(c -> (char) c)
+      .filter(ch -> s.indexOf(ch) == s.lastIndexOf(ch))
+      .findFirst().get();
+
+    System.out.println(c1);
+
+    //TODO: traditional hashmap approach
+    Map<Character, Integer> map1 = new HashMap<>();
+    for (char c : s.toCharArray()) {
+
+      map1.put(c, map1.getOrDefault(c, 0) +1);
+
+    }
+    for (int i =0; i<s.length(); i++) {
+
+      if (map1.get(s.charAt(i)) == 1) {
+        System.out.println(s.charAt(i));
+        System.out.println(i);
+        break;
+      }
+
+    }
 
   }
 }

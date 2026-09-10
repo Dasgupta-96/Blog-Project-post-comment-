@@ -30,6 +30,8 @@ public class Application implements CommandLineRunner {
   @Autowired
   Map<String, Payment> paymentChoice = new HashMap<>(); // TODO: Map injection works as strategy pattern
 
+//  private final Payment payment;
+//
 //	public Application(@Qualifier("cash") Payment payment) {
 //		this.payment = payment;
 //	}
